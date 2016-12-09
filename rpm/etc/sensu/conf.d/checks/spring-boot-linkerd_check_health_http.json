@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "@PROJECT_NAME@_check_health_http": {
+      "handlers": [
+        "flapjack"
+      ],
+      "subscribers": [
+        "all"
+      ],
+      "handle": false,
+      "standalone": true,
+      "interval": 300,
+      "command": "/etc/sensu/plugins/community/check-http.rb -u http://localhost:1338/health"
+    }
+  }
+}

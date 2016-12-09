@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+    "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+
+    <!--
+    -->
+    <!-- TODO:rename app -->
+    <suppress files="SpringBootLinkerdApplication.java" checks="HideUtilityClassConstructorCheck"/>
+    <suppress files=".java" checks="OperatorWrap"/>
+    <suppress files=".java" checks="FinalParameters"/>
+    <suppress files=".java" checks="HiddenField"/>
+    <suppress files=".java" checks="AvoidStarImport"/>
+
+
+
+
+	<!-- Test suppression's -->
+	<suppress files=".*Test.java" checks="[a-zA-Z0-9]*" />
+
+
+</suppressions>

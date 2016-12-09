@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "@PROJECT_NAME@_check_process": {
+      "handlers": [
+        "flapjack"
+      ],
+      "subscribers": [
+        "all"
+      ],
+      "handle": false,
+      "standalone": true,
+      "interval": 300,
+      "command": "/etc/sensu/plugins/community/check-procs.rb -p java -W 1"
+    }
+  }
+}

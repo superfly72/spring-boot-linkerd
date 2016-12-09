@@ -1,0 +1,4 @@
+info:
+  build:
+    artifact=@PROJECT_NAME@
+    version=@VERSION@-@RELEASE@

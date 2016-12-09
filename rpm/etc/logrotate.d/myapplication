@@ -1,0 +1,15 @@
+# <%= @app %>
+# to test:  logrotate -fdv /etc/logrotate.d/@PROJECT_NAME@
+# to force: logrotate -fv  /etc/logrotate.d/@PROJECT_NAME@
+/var/log/@PROJECT_NAME@/@PROJECT_NAME@.*.log {
+    missingok
+    notifempty
+    sharedscripts
+    rotate 1
+    daily
+    create
+    compress
+    postrotate
+        /bin/kill -HUP `cat /var/run/syslogd.pid` > /dev/null 2>&1 || true
+    endscript
+}

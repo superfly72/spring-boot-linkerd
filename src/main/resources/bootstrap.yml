@@ -1,0 +1,7 @@
+spring:
+ application:
+  name: spring-boot-linkerd
+ cloud:
+  config:
+   uri: http://configsrv.imaginary.com.au/
+   failFast: true
